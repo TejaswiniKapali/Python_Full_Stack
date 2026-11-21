@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'students',
 ]
 
 MIDDLEWARE = [
@@ -125,3 +126,7 @@ MAILERS = {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
 }
+
+LOGIN_URL='/'
+LOGIN_REDIRECT_URL='/dashboard/' 
+LOGIN_REDIRECT_URL='/'
